@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcela | Professional Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4B5320; /* Military Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #4B5320;
+            border-bottom: 2px solid #EAE7DC; /* Beige/Offwhite */
+            padding-bottom: 10px;
+        }
+
+        p, ul {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            background-color: #EAE7DC; /* Offwhite */
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #4B5320;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Marcela</h1>
+        <p>SDR Manager | Event Process Manager | E-commerce Operations Manager</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>I have diverse experience working across industries such as live marketing, publicity agencies, sports, healthcare, and tech. Currently, I lead a team of SDRs, manage key projects, and oversee internal tools implementation. I have a strong background in operations, team leadership, and event management. My interests include learning about AI applications in business, as well as working with email marketing platforms like Mailchimp, Constant Contact, and SendGrid.</p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <ul>
+            <li><strong>SDR Manager (Austin, TX-based company)</strong> – Managed and developed a team of SDRs, implemented new management tools for improved team performance.</li>
+            <li><strong>Event Process Manager</strong> – Organized high-level CTO dinners, coordinated events with internal and external teams while ensuring strict attention to detail.</li>
+            <li><strong>E-commerce Operations Manager</strong> – Led virtual teams and optimized operations for an online resale company, using platforms like Amazon and eBay.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p>Some of my recent projects include:</p>
+        <ul>
+            <li><strong>Internal Tool Implementation:</strong> Led the successful deployment of a new people management tool within the SDR team.</li>
+            <li><strong>High-profile Event Coordination:</strong> Planned and executed multiple high-stakes CTO dinners across various cities.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Info</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:marcela@example.com">marcela@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/marcela">linkedin.com/in/marcela</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
