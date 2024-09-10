@@ -3,50 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcela Potsch | Professional Profile</title>
+    <title>Marcela | Professional Profile</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Slide Section Styling */
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            color: #333;
         }
 
         header {
-            background-color: #EAE7DC; /* Beige/Offwhite */
+            background-color: #4B5320; /* Military Green */
             color: white;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
         }
 
-        h1 {
-            margin: 0;
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
         }
 
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+        header p {
+            font-size: 1.5em;
+        }
+
+        #about, #experience, #projects, #contact {
+            background-color: #f5f5f5;
+            color: #4B5320; /* Military Green for text */
         }
 
         .section-title {
-            font-size: 24px;
-            color: #4B5320;
+            font-size: 2.5em;
+            margin-bottom: 1em;
             border-bottom: 2px solid #EAE7DC; /* Beige/Offwhite */
             padding-bottom: 10px;
         }
 
-        p, ul {
-            line-height: 1.6;
-            font-size: 16px;
+        .content {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2em;
         }
 
-        .contact-info {
-            background-color: #EAE7DC; /* Offwhite */
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #EAE7DC; /* Beige */
+            border-radius: 5px;
         }
 
         a {
@@ -57,48 +86,85 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Smooth scrolling buttons */
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #4B5320;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #3a4120;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Marcela Potsch</h1>
-        <p>Project Manager | Operations Manager | Events Manager</p>
+    <!-- Navigation for smooth scrolling -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div>
+            <h1>Marcela</h1>
+            <p>SDR Manager | Event Process Manager | E-commerce Operations Manager</p>
+        </div>
     </header>
 
     <!-- About Me Section -->
     <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>I have diverse experience working across industries such as live marketing, publicity agencies, sports, healthcare, and tech. I enjoy being a Project Manager because it allows me to bring structure to complex tasks and drive projects to successful completion. I thrive on solving problems, collaborating with diverse teams, and turning strategic visions into actionable plans. I find great satisfaction in optimizing processes, improving team productivity, and delivering tangible results that align with the company's goals. Additionally, I enjoy the dynamic nature of the role, which constantly challenges me to adapt and learn.</p>
+        <div class="content">
+            <h2 class="section-title">About Me</h2>
+            <p>I have experience across industries including live marketing, publicity, sports, healthcare, and tech. I manage a team of SDRs and lead internal tool implementation projects. My skills include operations, team leadership, event management, and email marketing tools like Mailchimp, Constant Contact, and SendGrid.</p>
+        </div>
     </section>
 
     <!-- Work Experience Section -->
     <section id="experience">
-        <h2 class="section-title">Work Experience</h2>
-        <ul>
-            <li><strong>Partnership Manager (Austin, TX-based company)</strong> – Managed and developed a team of SDRs, and implemented new management tools for improved team performance.</li>
-            <li><strong>Operations Manager</strong> – Streamlined operations and fostered a culture of collaboration and continuous improvement. I’ve successfully led cross-functional teams, improved internal processes, and implemented tools to enhance communication and performance.</li>
-            <li><strong>Project Manager</strong> – Managed cross-functional teams, delivering projects on time and within budget, and led initiatives that boosted operational efficiency and client satisfaction.</li>
-        </ul>
+        <div class="content">
+            <h2 class="section-title">Work Experience</h2>
+            <ul>
+                <li><strong>SDR Manager</strong> - Managed a team of SDRs, implemented new tools, improved performance. (Austin, TX-based company)</li>
+                <li><strong>Event Process Manager</strong> - Coordinated high-level CTO dinners, managed logistics with attention to detail.</li>
+                <li><strong>E-commerce Operations Manager</strong> - Led virtual teams and optimized operations using Amazon, eBay, and more.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <p>Some of my recent projects include:</p>
-        <ul>
-            <li><strong>Internal Tool Implementation:</strong> Led the successful deployment of a new people management tool within the company.</li>
-            <li><strong>High-profile Event Coordination:</strong> Planned and executed multiple high-stakes CTO dinners across various cities.</li>
-        </ul>
+        <div class="content">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><strong>Internal Tool Implementation:</strong> Successfully led the deployment of a people management tool within my team.</li>
+                <li><strong>High-profile Event Coordination:</strong> Planned multiple CTO dinners with tight coordination and attention to detail.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Contact Info Section -->
     <section id="contact">
-        <h2 class="section-title">Contact Info</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:marcelapot@gmail.com">marcela@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/marcelapotsch">linkedin.com/in/marcela</a></p>
+        <div class="content">
+            <h2 class="section-title">Contact Info</h2>
+            <p>Email: <a href="mailto:marcela@example.com">marcela@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/marcela">linkedin.com/in/marcela</a></p>
         </div>
     </section>
 
